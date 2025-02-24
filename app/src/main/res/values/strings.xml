@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fragment-Jose-and-Caleb</string>
+    <string name="bar">Bar</string>
+    <string name="line">Line</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="bar_fragment_message">hello_bar_fragment</string>
+    <string name="line_fragment_message">hello_line_fragment</string>
+</resources>
