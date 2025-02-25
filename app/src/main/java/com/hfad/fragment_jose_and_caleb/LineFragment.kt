@@ -6,6 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.androidplot.xy.*
+import java.text.FieldPosition
+import java.text.Format
+import java.text.ParsePosition
 
 
 /**
@@ -37,13 +40,13 @@ class LineFragment : Fragment() {
 
         // turn the above arrays into XYSeries':
         val series1: XYSeries = SimpleXYSeries(
-            listOf(*series1Numbers), SimpleXYSeries.ArrayFormat.Y_VALS_ONLY, "Series1"
+            listOf(*domainLabels), listOf(*series1Numbers), "Series1"
         )
         val series2: XYSeries = SimpleXYSeries(
-            listOf(*series2Numbers), SimpleXYSeries.ArrayFormat.Y_VALS_ONLY, "Series2"
+            listOf(*domainLabels), listOf(*series2Numbers), "Series2"
         )
         val series3: XYSeries = SimpleXYSeries(
-            listOf(*series3Numbers), SimpleXYSeries.ArrayFormat.Y_VALS_ONLY, "Series3"
+            listOf(*domainLabels), listOf(*series3Numbers), "Series3"
         )
 
         // create formatters to use for drawing a series using LineAndPointRenderer
